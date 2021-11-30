@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardviewNepal"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/nepal"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+977"
+            android:textSize="24dp"
+            android:layout_marginStart="72dp"
+            android:layout_gravity=""
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+        android:id="@+id/Nepal"
+            android:layout_width="204dp"
+            android:layout_height="64dp"
+            android:text="NEPAL"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:background="@color/lgreen"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+
+            />
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewIndia"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardviewNepal"
+        app:layout_constraintStart_toEndOf="@id/cardviewNepal"
+        app:layout_constraintEnd_toEndOf="@id/cardviewNepal">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/india"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91"
+            android:textSize="24dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/India"
+            android:layout_width="204dp"
+            android:layout_height="64dp"
+            android:text="INDIA"
+            android:clickable="true"
+            android:background="@color/lgreen"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewPakistan"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardviewIndia"
+        app:layout_constraintStart_toStartOf="@id/cardviewIndia"
+        app:layout_constraintEnd_toEndOf="@id/cardviewIndia"
+        >
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/pakistan"
+        />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+92"
+        android:textSize="24dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"/>
+
+
+        <TextView
+            android:id="@+id/Pakistan"
+            android:layout_width="204dp"
+            android:layout_height="64dp"
+            android:text="PAKISTAN"
+            android:clickable="true"
+            android:background="@color/lgreen"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+
+        />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewAfghan"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardviewPakistan"
+        app:layout_constraintStart_toStartOf="@id/cardviewPakistan"
+        app:layout_constraintEnd_toEndOf="@id/cardviewPakistan">
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/afghan"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+93"
+            android:textSize="24dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/Afghan"
+            android:layout_width="204dp"
+            android:layout_height="64dp"
+            android:text="AFGHANISTAN"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:background="@color/lgreen"
+            android:textSize="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewBangla"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:cardBackgroundColor="@color/lblue"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="50dp"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toBottomOf="@id/cardviewAfghan"
+        app:layout_constraintStart_toStartOf="@id/cardviewAfghan"
+        app:layout_constraintEnd_toEndOf="@id/cardviewAfghan"
+        >
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/bangla"
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+880"
+            android:textSize="24dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"/>
+
+
+        <TextView
+            android:id="@+id/Bangla"
+            android:layout_width="204dp"
+            android:layout_height="64dp"
+            android:text="BANGLADESH"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:background="@color/lgreen"
+            android:textSize="24dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="50dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+
+            />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

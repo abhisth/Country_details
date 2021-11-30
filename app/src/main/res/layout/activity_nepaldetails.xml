@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nepaldetails">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdview"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="60dp"
+            android:backgroundTint="#A58AE1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Country Name : Nepal"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="45dp"
+                android:text="Area : 147,516 km²"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:text="Religious : Hinduism,Buddhis"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="115dp"
+                android:text="Population : 28,095,714"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        // second cardview
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdview2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="#67D85B"
+            app:layout_constraintTop_toBottomOf="@+id/cdview"
+            app:layout_constraintStart_toStartOf="@+id/cdview"
+            app:layout_constraintEnd_toEndOf="@+id/cdview">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/nepal" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+                android:text="Nepal is a landlocked country located in South Asia.
+It is mainly situated in the Himalayas, but also includes parts of
+the Indo-Gangetic Plain, bordering Tibet of China to the north,
+and India in the south, east, and west. The country was never colonized
+but served as a buffer state between Imperial China and British India.dwdwdewfwfefwe
+efewfwefwfewwwwwwwwwwwwwwwwwwwwwwww"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="10dp"/>
+</ScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cdview2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical"
+            >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingHorizontal="32dp"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:gravity="start"
+           android:layout_marginTop="24dp"
+           android:text="Animals found :"
+
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingHorizontal="32dp"
+           android:textSize="14sp"
+           android:gravity="start"
+
+           android:text="Nepal's native animals include the Bengal fox, Bengal tiger, snow leopard, wild ox, many species of deer, the Himalayan tahr, yak, and blue sheep."
+
+           />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ll1"
+            app:layout_constraintStart_toStartOf="@id/ll1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="32dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="start"
+                android:layout_marginTop="24dp"
+                android:text="Birds found :"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="32dp"
+                android:textSize="14sp"
+                android:gravity="start"
+                android:text="Spiny Babbler Acanthoptila nipalensis the only endemic bird of Nepal. Nine species; Himalayan Monal, Cheer Pheasant, Satyr Tragopan, Bengal Florican, Lesser Florican, Great Hornbill, Sarus Crane, Black Stork and White Stork are protected birds of Nepal."
+
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:background="@color/black"
+            app:layout_constraintStart_toStartOf="@id/ll2"
+            app:layout_constraintEnd_toEndOf="@id/ll2"
+            app:layout_constraintTop_toBottomOf="@id/ll2"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@id/view"
+    app:layout_constraintEnd_toEndOf="@id/view"
+    app:layout_constraintTop_toBottomOf="@+id/view">
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return Home"
+            android:clickable="true"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+</RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
